@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>翟翊羽 - 个人简历</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FF6B6B;
+            --secondary: #4ECDC4;
+            --accent: #FFE66D;
+            --dark: #2D3047;
+            --light: #F7FFF7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, var(--light) 0%, #e8f5e9 100%);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            padding: 3rem 0;
+            background: var(--dark);
+            color: white;
+            border-radius: 0 0 2rem 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--accent);
+            color: var(--dark);
+            border-radius: 2rem;
+            margin: 0.5rem;
+            font-weight: bold;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .section-title {
+            color: var(--primary);
+            margin: 2rem 0;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--secondary);
+            display: inline-block;
+        }
+
+        .contact-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>翟翊羽</h1>
+        <div class="badges">
+            <span class="badge"><i class="fas fa-graduation-cap"></i> 农业硕士</span>
+            <span class="badge"><i class="fas fa-running"></i> 运动达人</span>
+            <span class="badge"><i class="fas fa-users"></i> 学生干部</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- 基本信息 -->
+        <div class="contact-box">
+            <h2><i class="fas fa-id-card"></i> 基本信息</h2>
+            <p><i class="fas fa-phone"></i> 18338680158</p>
+            <p><i class="fas fa-envelope"></i> 1156600632@qq.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> 河南省信阳市</p>
+        </div>
+
+        <!-- 教育背景 -->
+        <h2 class="section-title"><i class="fas fa-university"></i> 教育背景</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>河南农业大学 (2019-2023)</h3>
+                <p>农业资源与环境 学士</p>
+                <ul>
+                    <li>主修课程：土壤学、植物营养学、作物施肥原理与技术</li>
+                    <li>毕业论文：过表达 TaZIP5 对转基因水稻生长及锌吸收的影响</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>华中农业大学 (2024-至今)</h3>
+                <p>资源利用与植物保护 硕士</p>
+                <ul>
+                    <li>研究方向：化肥增效剂、钼/硒元素应用</li>
+                    <li>主修课程：农业面源污染与生态治理</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 工作经历 -->
+        <h2 class="section-title"><i class="fas fa-briefcase"></i> 工作经历</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>信阳市浉河区团委 (2021-2022)</h3>
+                <ul>
+                    <li>组织抗疫志愿者团队</li>
+                    <li>负责公众号运营与推文撰写</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3>河南农业大学科研项目 (2022-2023)</h3>
+                <ul>
+                    <li>参与导师实验项目研究</li>
+                    <li>主导"过表达 TaZIP5 基因"实验</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 荣誉奖项 -->
+        <h2 class="section-title"><i class="fas fa-trophy"></i> 荣誉成就</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <ul>
+                    <li>连续三年校级优秀学生干部</li>
+                    <li>带领班级获"红旗团支部"称号</li>
+                    <li>2023届优秀毕业生</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
